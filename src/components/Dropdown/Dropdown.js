@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import { 
     TouchableWithoutFeedback, 
     View, 
@@ -9,10 +11,14 @@ import {
 import color from 'color';
 import ModalSelector from 'react-native-modal-selector';
 
-import companies from '../../data/companies';
-
+import styles from './styles';
 
 class Dropdown extends Component {
+    static propTypes = {
+        data: PropTypes.array,
+        title: PropTypes.string
+    };
+
     constructor() {
         super();
   
@@ -21,34 +27,33 @@ class Dropdown extends Component {
         }
     }
 
+    componentDidMount() {
+        this.setState({textInputValue: this.props.selected});
+    }
+
 
   render() {
       return (
-          <View style={{ flex: 1, justifyContent: 'space-around', padding: 50 }}>
+        <View>
+            <Text style={styles.text}>{this.props.title}</Text>
+            <View style={styles.container}>
+                <ModalSelector
+                    data={this.props.data}
+                    initValue={this.state.textInputValue}
+                    cancelText={'Sair'}
+                    onChange={option => { this.setState({textInputValue:option.label}) }}>
+                    <View >
+                    <TextInput
+                        underlineColorAndroid='transparent'
+                        style={styles.input}
+                        editable={false}
+                        placeholder={this.state.textInputValue}
+                        value={this.state.textInputValue} />
+                    </View>
+                </ModalSelector>
+            </View>
+        </View>
 
-              { /* Default mode: a clickable button will re rendered */ }
-              <ModalSelector
-                  data={companies}
-                  initValue="Select something yummy!"
-                  onChange={option => { alert(`${option.label} (${option.key}) nom nom nom`) }} />
-
-              { /*
-                  Wrapper mode: just wrap your existing component with ModalSelector.
-                  When the user clicks on your element, the modal selector is shown.
-               */ }
-              <ModalSelector
-                  data={companies}
-                  initValue="Select something yummy!"
-                  onChange={option => { this.setState({textInputValue:option.label}) }}>
-
-                  <TextInput
-                      style={{ borderWidth: 1, borderColor: '#ccc', padding: 10, height: 40 }}
-                      editable={false}
-                      placeholder="Select something yummy!"
-                      value={this.state.textInputValue} />
-
-              </ModalSelector>
-          </View>
       );
   }
 }

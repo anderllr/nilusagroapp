@@ -8,5 +8,5 @@ export default [
     { key: 3000, label: 'WINK E SCHNEIDER AGRONEGOCIOS LTDA' },
     { key: 6, label: 'RENATO SCHNEIDER' },
     { key: 7, label: 'RENATO SCHNEIDER ME' },
-    { key: 707408495, label: 'UNICAMPO MAQUINAS E EQUIPAMENTOS AGRICOLAS' },
+    { key: 707408495, label: 'UNICAMPO MAQUINAS E EQUIPAMENTOS AGRICOL' },
 ];

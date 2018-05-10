@@ -1,0 +1,9 @@
+export const ADD_APLICACAO = 'ADD_APLICACAO';
+export const ADD_PRODUTO = 'ADD_PRODUTO';
+export const DELETE_PRODUTO = 'DELETE_PRODUTO';
+export const SELECT_TALHAO = 'SELECT_TALHAO';
+export const SELECT_PRODUTO = 'SELECT_PRODUTO';
+export const SELECT_EMPRESA = 'SELECT_EMPRESA';
+export const SELECT_FAZENDA = 'SELECT_FAZENDA';
+export const CHANGE_DOSE = 'CHANGE_DOSE';
+export const CHANGE_QTDE = 'CHANGE_QTDE';

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_a47ff681d9ab3136dde52270b1cc27b7edb0b2dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.54.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.54.0_b96339a7c2d8580f9477eb6583c6457d0581834d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_6173e1cd8f512fe579808dcb867b50b022aa6260.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.aurelhubert\ahbottomnavigation\2.0.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.aurelhubert-ahbottomnavigation-2.0.6_5e5a5aeacd2d134e6545eabe5eb7b240b54b1f49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.54.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.54.0_b96339a7c2d8580f9477eb6583c6457d0581834d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.3.1_f79791264c28983a8932ada935437ddc30fa1eb1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.balysv.materialmenu\material-menu\1.5.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.balysv.materialmenu-material-menu-1.5.4_f7d8c4df5a35d29dd8e06ccd8f9611bdf085eea3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_3e4af447be9757437b17a36deb659b256ce42e77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_12b6bb06ddbaa8b08c7d2d35eb18002bb1007d9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_12b6bb06ddbaa8b08c7d2d35eb18002bb1007d9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\NilusAgro\react-native-vector-icons\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="279750fed3c920d06351dbf32889c1b48203c7ad">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\NilusAgro-react-native-vector-icons-unspecified_2562bcf275bfedcfa6cc2570c980b4b080a54171.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_0aa49ccc88e2aa112a27ed2d3dc059bad1a7309f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_0aa49ccc88e2aa112a27ed2d3dc059bad1a7309f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_d7a8b6a0619be474b643eb88ada7b4fab4fea958.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_ecd9a6bfbe8560a48acf52aeea0c9c07f5a9e671.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_ecd9a6bfbe8560a48acf52aeea0c9c07f5a9e671.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.3.1_e6d9170d112651032bff276a411b4c63218223ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_61d0a04276754b560bdfda21f22a3e605ff055ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.balysv.materialmenu\material-menu-toolbar\1.5.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.balysv.materialmenu-material-menu-toolbar-1.5.4_f60cc79273a4c636cab4d37d3f8791c5b1dcc489.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_d9ab392ac15ea3648e959e26feac4c3f2a1bf76a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_7aeec586bfd42026c63c972b76af478b4d558cbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_d25f9a6fa87cb54af84f7849cc92b3732c5dbf28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_c2a90a02cabb36fa85693bd13b6cce26f9327933.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_20ed826379c85502753c00ba1dd3f8fe7a5d1fb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_d25f9a6fa87cb54af84f7849cc92b3732c5dbf28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_b36e84598f7602add0345c322bf526359edd4ac3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_6b8632222bac3802ac206413134362644e865027.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_662e0c55ea79f73816ac625ab3feb57c6240f21c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_20ed826379c85502753c00ba1dd3f8fe7a5d1fb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_662e0c55ea79f73816ac625ab3feb57c6240f21c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_c2a90a02cabb36fa85693bd13b6cce26f9327933.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_6f86f9047723f976d272361ef9767e9fbc0f02a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_7aeec586bfd42026c63c972b76af478b4d558cbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_6b8632222bac3802ac206413134362644e865027.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_b36e84598f7602add0345c322bf526359edd4ac3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.3.1_fb2d27e7417750d46999ad04dc6853fb2042ada3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_7d70e82fdb9fb72040f20b6941a3f099c61343dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_acf069b47a111d2bb279ad3383f7e708bf6d5a57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_8619ce8645e0b48002c6d90a88399b70db1a773b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_54742ad9003245d813d37dc6214f2ea08b07feb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_8619ce8645e0b48002c6d90a88399b70db1a773b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_610bc97f95a14f17ac2dfd10b861ffd94a788a78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_acf069b47a111d2bb279ad3383f7e708bf6d5a57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_d9ab392ac15ea3648e959e26feac4c3f2a1bf76a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.54.0\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_62f60989513ccd894ef5e3dfeb9b8c901dbc3f68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\NilusAgro\react-native-navigation\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="258137e076979bcbf890744fb18d1ed84e23cd42">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\NilusAgro-react-native-navigation-unspecified_ca694b54bd54945912abaff2e20303cf6a7e15e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.54.0\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_62f60989513ccd894ef5e3dfeb9b8c901dbc3f68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_54742ad9003245d813d37dc6214f2ea08b07feb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_a7ce2b9fff4c9c9907515f3efdec6d32910d1280.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_b171228c021a2ba45d3b26063aedac1dfe65f96b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anderson\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\library-2.4.0_91e1fc2adcf37daa7419dabf1c3b683458f68882.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_0d3f42f442c460d3a8e455a91880224c0b32181a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\DesenvReact\NilusAgro\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="D:\DesenvReact\NilusAgro\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_61d0a04276754b560bdfda21f22a3e605ff055ba.jar" />
+    </item>
+
+</items>

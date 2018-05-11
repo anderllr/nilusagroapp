@@ -57,7 +57,7 @@ ADDED from D:\DesenvReact\NilusAgro\android\app\src\main\AndroidManifest.xml:13:
 	android:label
 		ADDED from D:\DesenvReact\NilusAgro\android\app\src\main\AndroidManifest.xml:15:9-41
 	android:windowSoftInputMode
-		ADDED from D:\DesenvReact\NilusAgro\android\app\src\main\AndroidManifest.xml:17:9-51
+		ADDED from D:\DesenvReact\NilusAgro\android\app\src\main\AndroidManifest.xml:17:9-79
 	android:configChanges
 		ADDED from D:\DesenvReact\NilusAgro\android\app\src\main\AndroidManifest.xml:16:9-79
 	android:name

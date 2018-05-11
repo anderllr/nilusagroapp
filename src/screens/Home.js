@@ -18,7 +18,6 @@ class Home extends Component {
 		this.props.navigator.push({
 			screen: 'nilusagro.AplicacaoTabs',
 			title: 'Aplicação Tabs',
-			navBarBackgroundColor: 'blue',
 			topTabs: [
 				{
 					screenId: 'nilusagro.AplicacaoLista',

@@ -18,27 +18,28 @@ class Login extends Component {
 		return (
 			<Container backgroundColor={null}>
 				<StatusBar translucent={false} barStyle="light-content" />
+				<KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
+					<ImageBackground
+						resizeMode="cover"
+						style={styles.imageBackground}
+						source={require('./images/background.png')}
+					>
+						<View style={styles.container}>
+							<Logo />
+							<View style={styles.fields}>
+								<InputWithLabel labelText="E-mail" editable={true} />
+							</View>
+							<View style={styles.fields}>
+								<InputWithLabel labelText="Senha" editable={true} />
+							</View>
 
-				<ImageBackground
-					resizeMode="cover"
-					style={styles.imageBackground}
-					source={require('./images/background.png')}
-				>
-					<KeyboardAvoidingView behavior="padding" style={styles.container}>
-						<Logo />
-						<View style={styles.fields}>
-							<InputWithLabel labelText="E-mail" editable={true} />
+							<Check title="Lembrar meus dados neste dispositivo?" />
+							<View style={styles.loginButton}>
+								<RoundButton text="Entrar" onPress={this.loginHandler} />
+							</View>
 						</View>
-						<View style={styles.fields}>
-							<InputWithLabel labelText="Senha" editable={true} />
-						</View>
-
-						<Check title="Lembrar meus dados neste dispositivo?" />
-						<View style={styles.loginButton}>
-							<RoundButton text="Entrar" onPress={this.loginHandler} />
-						</View>
-					</KeyboardAvoidingView>
-				</ImageBackground>
+					</ImageBackground>
+				</KeyboardAvoidingView>
 			</Container>
 		);
 	}

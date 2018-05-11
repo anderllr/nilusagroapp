@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Text, View, StatusBar, TextInput, Button, FlatList } from 'react-native';
+import {
+	View,
+	FlatList,
+	KeyboardAvoidingView,
+	ScrollView,
+	Platform,
+	StyleSheet,
+	Keyboard,
+	StatusBar,
+} from 'react-native';
+
 import { Dropdown } from '../components/Dropdown';
 import { Header } from '../components/Header';
 import { Container } from '../components/Container';
@@ -33,21 +43,47 @@ class Aplicacao extends Component {
 		fazenda: PropTypes.string,
 		talhao_area: PropTypes.string,
 		talhoes: PropTypes.array,
-		id_produto: PropTypes.string,
+		id_produto: PropTypes.number,
 		desc_produto: PropTypes.string,
 		qt_dose: PropTypes.string,
 		qtde: PropTypes.string,
 		aplicacao: PropTypes.object,
+		produto: PropTypes.array,
 	};
+
+	constructor(props) {
+		super(props);
+
+		this.state = { barHidden: false };
+	}
+
+	componentDidMount() {
+		const name = Platform.OS === 'ios' ? 'Will' : 'Did';
+		this.keyboardDidShowListener = Keyboard.addListener(`keyboard${name}Show`, this.keyboardWillShow);
+		this.keyboardDidHideListener = Keyboard.addListener(`keyboard${name}Hide`, this.keyboardWillHide);
+	}
+
+	keyboardWillShow = () => {
+		this.setState({ barHidden: true });
+	};
+
+	keyboardWillHide = () => {
+		this.setState({ barHidden: false });
+	};
+
+	componentWillUnmount() {
+		this.keyboardDidShowListener.remove();
+		this.keyboardDidHideListener.remove();
+	}
 
 	addProduto = () => {
 		//Aqui vai adicionar os dados do state à grade (objeto da aplicação)
-		if (this.state.id_produto !== 'SELECIONE UM PRODUTO' && this.state.qt_dose !== '' && this.state.qtde !== '') {
+		if (this.props.id_produto !== 0 && this.props.qt_dose !== '' && this.props.qtde !== '') {
 			let produto = {
-				id: this.state.id_produto,
-				descProd: this.state.desc_produto,
-				qtDose: this.state.qt_dose,
-				qtTotal: this.state.qtde,
+				id: this.props.id_produto,
+				descProd: this.props.desc_produto,
+				qtDose: this.props.qt_dose,
+				qtTotal: this.props.qtde,
 			};
 
 			this.props.addProduto(produto);
@@ -57,6 +93,7 @@ class Aplicacao extends Component {
 	render() {
 		return (
 			<Container>
+				<StatusBar hidden={this.state.barHidden} translucent={false} barStyle="light-content" />
 				<GroupBox flex={1}>
 					<View style={styles.lineForm}>
 						<View style={{ flex: 1 }}>
@@ -132,10 +169,19 @@ class Aplicacao extends Component {
 						/>
 					</View>
 				</GroupBox>
-				<GroupBox flex={0.3}>
-					<View style={{ alignItems: 'center' }}>
-						<View style={{ width: '50%' }}>
-							<RoundButton text="Salvar e Enviar a Aplicação" onPress={() => null} />
+				<GroupBox flex={0.3} style={{ marginBottom: 10 }}>
+					<View
+						style={{
+							flexDirection: 'row',
+							alignItems: 'center',
+							justifyContent: 'space-between',
+						}}
+					>
+						<View style={{ width: '40%' }}>
+							<RoundButton text="Nova Aplicação" onPress={() => null} />
+						</View>
+						<View style={{ width: '40%' }}>
+							<RoundButton text="Salvar e Enviar" onPress={() => null} />
 						</View>
 					</View>
 				</GroupBox>

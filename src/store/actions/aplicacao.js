@@ -16,10 +16,10 @@ export const addAplicacao = aplicacaoObj => {
 	};
 };
 
-export const addProduto = aplicacaoProd => {
+export const addProduto = produto => {
 	return {
 		type: ADD_PRODUTO,
-		aplicacaoProd,
+		produto,
 	};
 };
 

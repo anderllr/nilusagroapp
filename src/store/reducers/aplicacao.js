@@ -19,12 +19,12 @@ const initialState = {
 		{ key: 4, label: 'TALHAO VARJAO', area: '132 HA' },
 		{ key: 5, label: 'TALHAO PORTEIRA', area: '163 HA' },
 	],
-	id_produto: '',
+	id_produto: 0,
 	desc_produto: 'SELECIONE UM PRODUTO',
 	qt_dose: '',
 	qtde: '',
 	aplicacao: {
-		id: '',
+		id: 0,
 		id_empresa: '1',
 		descEmpresa: 'GRUPO XYZ',
 		id_fazenda: '1',
@@ -34,15 +34,80 @@ const initialState = {
 		talhao_area: '',
 		aplicacaoProd: [],
 	},
+	aplicacoes: [
+		{
+			id: 722,
+			descEmpresa: 'GRUPO XYZ',
+			descFazenda: 'FAZENDA ABC DE GOIAS',
+			descTalhao: 'TALHAO SUL',
+			dtAplicacao: '28/04/2018',
+			aplicacoProd: [
+				{ id: 722, descProd: 'SEMENTE DE SOJA M8210 I PRO', qtDose: 2.3, qtTotal: 145 },
+				{ id: 686, descProd: 'YARAVITA GLYTREL MNP', qtDose: 2.3, qtTotal: 145 },
+				{ id: 8, descProd: 'CEFANOL', qtDose: 2.3, qtTotal: 145 },
+				{ id: 521, descProd: 'DIMILIN', qtDose: 2.3, qtTotal: 145 },
+				{ id: 763, descProd: 'DERMACOR', qtDose: 2.3, qtTotal: 99 },
+				{ id: 703, descProd: 'PRIME 200', qtDose: 2.3, qtTotal: 145 },
+				{ id: 415, descProd: 'FOX', qtDose: 2.3, qtTotal: 145 },
+				{ id: 303, descProd: 'SOLUPOTASSE SULFATO K', qtDose: 2.3, qtTotal: 124 },
+				{ id: 422, descProd: 'TRIUNFO FLEX', qtDose: 2.3, qtTotal: 1560 },
+			],
+		},
+		{
+			id: 721,
+			descEmpresa: 'GRUPO XYZ',
+			descFazenda: 'FAZENDA ABC DE GOIAS',
+			descTalhao: 'TALHAO NORTE',
+			dtAplicacao: '25/04/2018',
+			aplicacoProd: [
+				{ id: 424, descProd: 'PROFOL NICOMO DRY', qtDose: 2.3, qtTotal: 145 },
+				{ id: 727, descProd: 'EXALT', qtDose: 2.3, qtTotal: 145 },
+				{ id: 475, descProd: 'PROFOL SUPERA', qtDose: 2.3, qtTotal: 145 },
+				{ id: 149, descProd: 'DANIMEN 300 CE', qtDose: 2.3, qtTotal: 145 },
+			],
+		},
+		{
+			id: 720,
+			descEmpresa: 'GRUPO XYZ',
+			descFazenda: 'FAZENDA ABC DE GOIAS',
+			descTalhao: 'TALHAO SUDOESTE',
+			dtAplicacao: '24/04/2018',
+			aplicacoProd: [],
+		},
+		{
+			id: 719,
+			descEmpresa: 'GRUPO XYZ',
+			descFazenda: 'FAZENDA ABC DE GOIAS',
+			descTalhao: 'TALHAO VARJAO',
+			dtAplicacao: '23/04/2018',
+			aplicacoProd: [],
+		},
+		{
+			id: 718,
+			descEmpresa: 'GRUPO XYZ',
+			descFazenda: 'FAZENDA ABC DE GOIAS',
+			descTalhao: 'TALHAO NORTE',
+			dtAplicacao: '20/04/2018',
+			aplicacoProd: [],
+		},
+		{
+			id: 717,
+			descEmpresa: 'GRUPO XYZ',
+			descFazenda: 'FAZENDA ABC DE GOIAS',
+			descTalhao: 'TALHAO PORTEIRA',
+			dtAplicacao: '19/04/2018',
+			aplicacoProd: [],
+		},
+	],
 };
 
 const setProduct = (state, action) => {
-	let aplicacao = state.aplicacao;
-	let aplicacaoProd = aplicacao.aplicacaoProd.filter(prod => {
-		return prod.id !== this.state.id_produto;
+	let aplicacaoProd = state.aplicacao.aplicacaoProd.filter(val => {
+		return val.id !== action.produto.id;
 	});
+
 	//Agora adiciona
-	aplicacaoProd = aplicacaoProd.concat(produto);
+	aplicacaoProd = aplicacaoProd.concat(action.produto);
 
 	return {
 		...state.aplicacao,
@@ -60,7 +125,7 @@ const reducer = (state = initialState, action) => {
 		case ADD_PRODUTO:
 			return {
 				...state,
-				id_produto: '',
+				id_produto: 0,
 				desc_produto: 'SELECIONE UM PRODUTO',
 				qt_dose: '',
 				qtde: '',

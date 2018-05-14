@@ -68,6 +68,20 @@ const styles = EStyleSheet.create({
 		alignItems: 'center',
 		backgroundColor: '$white',
 	},
+	icon: {
+		backgroundColor: 'transparent',
+		width: 30,
+		height: 30,
+		borderRadius: 15,
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+	iconVisible: {
+		backgroundColor: '$primaryGreen',
+	},
+	checkIcon: {
+		width: 18,
+	},
 });
 
 export default styles;

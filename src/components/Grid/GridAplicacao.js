@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { View, Text, TouchableHighlight } from 'react-native';
 import styles from './styles';
+import Icon from './Icon';
 
 const GridAplicacao = ({ data, onPress }) => (
 	<TouchableHighlight underlayColor={styles.$underlayColor} onPress={onPress}>
@@ -14,6 +15,9 @@ const GridAplicacao = ({ data, onPress }) => (
 			</View>
 			<View style={{ flex: 2 }}>
 				<Text style={styles.text}>{data.dtAplicacao}</Text>
+			</View>
+			<View style={{ flex: 1 }}>
+				<Icon visible={data.status === 'INTEGRADO'} />
 			</View>
 		</View>
 	</TouchableHighlight>

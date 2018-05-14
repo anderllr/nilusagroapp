@@ -13,6 +13,9 @@ const CabecalhoAplicacaoProd = () => (
 		<View style={{ flex: 2 }}>
 			<Text style={styles.titleText}>Data</Text>
 		</View>
+		<View style={{ flex: 1 }}>
+			<Text style={styles.titleText}>Status</Text>
+		</View>
 	</View>
 );
 

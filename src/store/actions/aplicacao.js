@@ -1,25 +1,32 @@
 import {
 	ADD_APLICACAO,
 	ADD_PRODUTO,
+	DELETE_PRODUTO,
 	SELECT_TALHAO,
 	SELECT_PRODUTO,
 	SELECT_EMPRESA,
 	SELECT_FAZENDA,
 	CHANGE_DOSE,
 	CHANGE_QTDE,
+	SELECT_APLICACAO,
+	LIMPA_APLICACAO,
 } from './actionTypes';
 
-export const addAplicacao = aplicacaoObj => {
-	return {
-		type: ADD_APLICACAO,
-		payLoad: aplicacaoObj,
-	};
-};
+export const addAplicacao = () => ({
+	type: ADD_APLICACAO,
+});
 
 export const addProduto = produto => {
 	return {
 		type: ADD_PRODUTO,
 		produto,
+	};
+};
+
+export const delProduto = id => {
+	return {
+		type: DELETE_PRODUTO,
+		id,
 	};
 };
 
@@ -64,3 +71,14 @@ export const changeQtde = value => {
 		value,
 	};
 };
+
+export const selectAplicacao = id => {
+	return {
+		type: SELECT_APLICACAO,
+		id,
+	};
+};
+
+export const limpaAplicacao = () => ({
+	type: LIMPA_APLICACAO,
+});

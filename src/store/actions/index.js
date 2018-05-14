@@ -7,4 +7,7 @@ export {
 	changeQtde,
 	changeProduto,
 	addProduto,
+	selectAplicacao,
+	limpaAplicacao,
+	delProduto,
 } from './aplicacao';

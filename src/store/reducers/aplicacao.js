@@ -8,6 +8,8 @@ import {
 	SELECT_FAZENDA,
 	CHANGE_DOSE,
 	CHANGE_QTDE,
+	SELECT_APLICACAO,
+	LIMPA_APLICACAO,
 } from '../actions/actionTypes';
 
 const initialState = {
@@ -26,22 +28,27 @@ const initialState = {
 	aplicacao: {
 		id: 0,
 		id_empresa: '1',
-		descEmpresa: 'GRUPO XYZ',
 		id_fazenda: '1',
+		descEmpresa: 'GRUPO XYZ',
 		descFazenda: 'FAZENDA ABC DE GOIAS',
 		descTalhao: 'SELECIONE UM TALHAO',
-		dtAplicacao: '',
+		dtAplicacao: '14/05/2018',
 		talhao_area: '',
+		status: 'ATIVO',
 		aplicacaoProd: [],
 	},
 	aplicacoes: [
 		{
 			id: 722,
+			id_empresa: '1',
+			id_fazenda: '1',
 			descEmpresa: 'GRUPO XYZ',
 			descFazenda: 'FAZENDA ABC DE GOIAS',
 			descTalhao: 'TALHAO SUL',
 			dtAplicacao: '28/04/2018',
-			aplicacoProd: [
+			talhao_area: '120 HA',
+			status: 'ATIVO',
+			aplicacaoProd: [
 				{ id: 722, descProd: 'SEMENTE DE SOJA M8210 I PRO', qtDose: 2.3, qtTotal: 145 },
 				{ id: 686, descProd: 'YARAVITA GLYTREL MNP', qtDose: 2.3, qtTotal: 145 },
 				{ id: 8, descProd: 'CEFANOL', qtDose: 2.3, qtTotal: 145 },
@@ -55,11 +62,15 @@ const initialState = {
 		},
 		{
 			id: 721,
+			id_empresa: '1',
+			id_fazenda: '1',
 			descEmpresa: 'GRUPO XYZ',
 			descFazenda: 'FAZENDA ABC DE GOIAS',
 			descTalhao: 'TALHAO NORTE',
+			talhao_area: '145 HA',
 			dtAplicacao: '25/04/2018',
-			aplicacoProd: [
+			status: 'INTEGRADO',
+			aplicacaoProd: [
 				{ id: 424, descProd: 'PROFOL NICOMO DRY', qtDose: 2.3, qtTotal: 145 },
 				{ id: 727, descProd: 'EXALT', qtDose: 2.3, qtTotal: 145 },
 				{ id: 475, descProd: 'PROFOL SUPERA', qtDose: 2.3, qtTotal: 145 },
@@ -68,35 +79,51 @@ const initialState = {
 		},
 		{
 			id: 720,
+			id_empresa: '1',
+			id_fazenda: '1',
 			descEmpresa: 'GRUPO XYZ',
 			descFazenda: 'FAZENDA ABC DE GOIAS',
 			descTalhao: 'TALHAO SUDOESTE',
+			talhao_area: '182 HA',
 			dtAplicacao: '24/04/2018',
-			aplicacoProd: [],
+			status: 'ATIVO',
+			aplicacaoProd: [],
 		},
 		{
 			id: 719,
+			id_empresa: '1',
+			id_fazenda: '1',
 			descEmpresa: 'GRUPO XYZ',
 			descFazenda: 'FAZENDA ABC DE GOIAS',
 			descTalhao: 'TALHAO VARJAO',
+			talhao_area: '132 HA',
 			dtAplicacao: '23/04/2018',
-			aplicacoProd: [],
+			status: 'INTEGRADO',
+			aplicacaoProd: [],
 		},
 		{
 			id: 718,
+			id_empresa: '1',
+			id_fazenda: '1',
 			descEmpresa: 'GRUPO XYZ',
 			descFazenda: 'FAZENDA ABC DE GOIAS',
 			descTalhao: 'TALHAO NORTE',
+			talhao_area: '145 HA',
 			dtAplicacao: '20/04/2018',
-			aplicacoProd: [],
+			status: 'INTEGRADO',
+			aplicacaoProd: [],
 		},
 		{
 			id: 717,
+			id_empresa: '1',
+			id_fazenda: '1',
 			descEmpresa: 'GRUPO XYZ',
 			descFazenda: 'FAZENDA ABC DE GOIAS',
 			descTalhao: 'TALHAO PORTEIRA',
+			talhao_area: '163 HA',
 			dtAplicacao: '19/04/2018',
-			aplicacoProd: [],
+			status: 'INTEGRADO',
+			aplicacaoProd: [],
 		},
 	],
 };
@@ -115,12 +142,42 @@ const setProduct = (state, action) => {
 	};
 };
 
+const delProduct = (state, action) => {
+	let aplicacaoProd = state.aplicacao.aplicacaoProd.filter(val => {
+		return val.id !== action.id;
+	});
+
+	return {
+		...state.aplicacao,
+		aplicacaoProd,
+	};
+};
+
+const setAplicacao = (state, action) => {
+	let aplicacao = state.aplicacao;
+
+	//Significa que é nova
+	if (aplicacao.id === 0) {
+		aplicacao.id = Math.random();
+	}
+
+	let aplicacoes = state.aplicacoes.filter(val => {
+		return val.id !== aplicacao.id;
+	});
+
+	//Agora adiciona
+	aplicacoes = aplicacoes.concat(aplicacao);
+
+	return aplicacoes;
+};
+
 const reducer = (state = initialState, action) => {
 	switch (action.type) {
 		case ADD_APLICACAO:
 			return {
 				...state,
-				empresa: action.payLoad,
+				aplicacao: initialState.aplicacao,
+				aplicacoes: setAplicacao(state, action),
 			};
 		case ADD_PRODUTO:
 			return {
@@ -130,6 +187,11 @@ const reducer = (state = initialState, action) => {
 				qt_dose: '',
 				qtde: '',
 				aplicacao: setProduct(state, action),
+			};
+		case DELETE_PRODUTO:
+			return {
+				...state,
+				aplicacao: delProduct(state, action),
 			};
 		case SELECT_TALHAO:
 			return {
@@ -173,6 +235,18 @@ const reducer = (state = initialState, action) => {
 			return {
 				...state,
 				qtde: action.value,
+			};
+		case SELECT_APLICACAO:
+			return {
+				...state,
+				aplicacao: state.aplicacoes.find(val => {
+					return val.id === action.id;
+				}),
+			};
+		case LIMPA_APLICACAO:
+			return {
+				...state,
+				aplicacao: initialState.aplicacao,
 			};
 		default:
 			return state;

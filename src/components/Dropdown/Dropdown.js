@@ -12,7 +12,7 @@ class Dropdown extends Component {
 		data: PropTypes.array,
 		title: PropTypes.string,
 		onChange: PropTypes.func,
-		value: PropTypes.value,
+		value: PropTypes.string,
 	};
 
 	handleOption = option => {

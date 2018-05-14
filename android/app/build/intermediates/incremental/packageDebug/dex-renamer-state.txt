@@ -1,4 +1,4 @@
-#Fri May 11 14:53:24 AMT 2018
+#Mon May 14 09:38:21 AMT 2018
 base.0=D\:\\DesenvReact\\NilusAgro\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=D\:\\DesenvReact\\NilusAgro\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

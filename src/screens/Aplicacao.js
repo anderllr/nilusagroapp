@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import {
-	View,
-	FlatList,
-	KeyboardAvoidingView,
-	ScrollView,
-	Platform,
-	StyleSheet,
-	Keyboard,
-	StatusBar,
-} from 'react-native';
+import { View, FlatList, Platform, StatusBar, Alert, Keyboard } from 'react-native';
 
 import { Dropdown } from '../components/Dropdown';
 import { Header } from '../components/Header';
@@ -30,6 +21,9 @@ import {
 	changeDose,
 	changeQtde,
 	addProduto,
+	limpaAplicacao,
+	delProduto,
+	addAplicacao,
 } from '../store/actions';
 
 //import data:
@@ -88,6 +82,45 @@ class Aplicacao extends Component {
 
 			this.props.addProduto(produto);
 		}
+	};
+
+	handleDeleteProd = item => {
+		this.props.onPushBtnExcluir(item.id);
+	};
+
+	pushBtnSalvar = () => {
+		if (this.props.aplicacao.status !== 'ATIVO') {
+			Alert.alert('Aplicação!', 'Aplicação já integrada!', [{ text: 'Sair', onPress: () => null }]);
+		} else {
+			let msg = '';
+			//TODO: Regras de salvamento
+			if (this.props.aplicacao.descTalhao === 'SELECIONE UM TALHAO') {
+				msg = 'Talhão';
+			}
+			if (!this.props.aplicacao.aplicacaoProd.length > 0) {
+				msg += ' | Produtos!';
+			}
+			if (msg !== '') {
+				Alert.alert('Aplicação!', 'Você precisa informar: ' + msg, [{ text: 'Sair', onPress: () => null }]);
+			} else {
+				this.props.onPushBtnSalvar();
+				this.props.navigator.switchToTopTab({
+					tabIndex: 0,
+				});
+			}
+		}
+	};
+
+	pushBtnNovo = () => {
+		Alert.alert(
+			'Nova Aplicação?',
+			'Continuar irá limpar os dados atuais?',
+			[
+				{ text: 'Sim', onPress: () => this.props.onPushBtnNovo() },
+				{ text: 'Não', onPress: () => console.log('Não Pressed'), style: 'cancel' },
+			],
+			{ cancelable: false }
+		);
 	};
 
 	render() {
@@ -163,7 +196,9 @@ class Aplicacao extends Component {
 						<CabecalhoAplicacaoProd />
 						<FlatList
 							data={this.props.aplicacao.aplicacaoProd}
-							renderItem={({ item }) => <GridAplicacaoProd data={item} />}
+							renderItem={({ item }) => (
+								<GridAplicacaoProd data={item} onPress={() => this.handleDeleteProd(item)} />
+							)}
 							keyExtractor={item => item.id.toString()}
 							ItemSeparatorComponent={Separator}
 						/>
@@ -178,10 +213,10 @@ class Aplicacao extends Component {
 						}}
 					>
 						<View style={{ width: '40%' }}>
-							<RoundButton text="Nova Aplicação" onPress={() => null} />
+							<RoundButton text="Nova Aplicação" onPress={this.pushBtnNovo} />
 						</View>
 						<View style={{ width: '40%' }}>
-							<RoundButton text="Salvar e Enviar" onPress={() => null} />
+							<RoundButton text="Salvar e Enviar" onPress={this.pushBtnSalvar} />
 						</View>
 					</View>
 				</GroupBox>
@@ -200,6 +235,7 @@ const mapStateToProps = state => ({
 	qt_dose: state.aplicacao.qt_dose,
 	qtde: state.aplicacao.qtde,
 	aplicacao: state.aplicacao.aplicacao,
+	estado: state,
 });
 
 const mapDispatchToProps = dispatch => {
@@ -211,6 +247,9 @@ const mapDispatchToProps = dispatch => {
 		onChangeDose: value => dispatch(changeDose(value)),
 		onChangeQtde: value => dispatch(changeQtde(value)),
 		addProduto: obj => dispatch(addProduto(obj)),
+		onPushBtnNovo: () => dispatch(limpaAplicacao()),
+		onPushBtnExcluir: id => dispatch(delProduto(id)),
+		onPushBtnSalvar: () => dispatch(addAplicacao()),
 	};
 };
 

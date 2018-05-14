@@ -11,6 +11,10 @@ import { Check } from '../components/CheckBox';
 import startMainMenu from './startMainMenu';
 
 class Login extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { checked: false };
+	}
 	loginHandler = () => {
 		startMainMenu();
 	};
@@ -30,10 +34,14 @@ class Login extends Component {
 								<InputWithLabel labelText="E-mail" editable={true} />
 							</View>
 							<View style={styles.fields}>
-								<InputWithLabel labelText="Senha" editable={true} />
+								<InputWithLabel labelText="Senha" editable={true} secureTextEntry />
 							</View>
 
-							<Check title="Lembrar meus dados neste dispositivo?" />
+							<Check
+								title="Lembrar meus dados neste dispositivo?"
+								checked={this.state.checked}
+								onPress={() => this.setState({ checked: !this.state.checked })}
+							/>
 							<View style={styles.loginButton}>
 								<RoundButton text="Entrar" onPress={this.loginHandler} />
 							</View>

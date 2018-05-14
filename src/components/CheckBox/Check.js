@@ -4,21 +4,21 @@ import { CheckBox } from 'react-native-elements';
 import PropTypes from 'prop-types';
 import styles from './styles';
 
-
-const Check = ({ title, checked=false}) => (
-    <View>
-       <CheckBox
-           containerStyle={styles.checkContainer}
-           textStyle={styles.text}
-           title={title}
-           checked={checked}
-       />
-    </View>
+const Check = props => (
+	<View>
+		<CheckBox
+			containerStyle={styles.checkContainer}
+			textStyle={styles.text}
+			title={props.title}
+			checked={props.checked}
+			{...props}
+		/>
+	</View>
 );
 
 Check.propTypes = {
-    title: PropTypes.string,
-    checked: PropTypes.bool
+	title: PropTypes.string,
+	checked: PropTypes.bool,
 };
 
 export default Check;

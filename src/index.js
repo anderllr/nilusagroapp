@@ -17,6 +17,7 @@ EStyleSheet.build({
 
 	$white: '#fff',
 	$border: '#CED0CE',
+	$disabled: '#99B0A8',
 	$inputText: '#008669',
 	$lightGray: '#F0F0F0',
 	$darkText: '#002B16',

@@ -6,8 +6,11 @@ import { connect } from 'react-redux';
 import { aplicacao } from '../data';
 import { GridAplicacao, CabecalhoAplicacao, Separator } from '../components/Grid';
 
+import { selectAplicacao } from '../store/actions';
+
 const AplicacaoLista = props => {
-	switchToAplicacao = () => {
+	switchToAplicacao = item => {
+		props.onSelectAplicacao(item.id);
 		props.navigator.switchToTopTab({
 			tabIndex: 1,
 		});
@@ -19,7 +22,7 @@ const AplicacaoLista = props => {
 			<CabecalhoAplicacao />
 			<FlatList
 				data={props.aplicacoes}
-				renderItem={({ item }) => <GridAplicacao data={item} onPress={switchToAplicacao} />}
+				renderItem={({ item }) => <GridAplicacao data={item} onPress={() => switchToAplicacao(item)} />}
 				keyExtractor={item => item.id.toString()}
 				ItemSeparatorComponent={Separator}
 			/>
@@ -35,4 +38,10 @@ const mapStateToProps = state => ({
 	aplicacoes: state.aplicacao.aplicacoes,
 });
 
-export default connect(mapStateToProps)(AplicacaoLista);
+const mapDispatchToProps = dispatch => {
+	return {
+		onSelectAplicacao: id => dispatch(selectAplicacao(id)),
+	};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(AplicacaoLista);

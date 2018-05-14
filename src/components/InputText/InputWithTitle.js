@@ -9,6 +9,7 @@ const InputWithTitle = props => {
 	const { title, editable = true, size, keyboardType } = props;
 
 	const containerStyle = [styles.sizeContainer];
+	const titleContainer = [styles.titleContainer];
 
 	if (size) {
 		//Calc a width proportional
@@ -16,10 +17,14 @@ const InputWithTitle = props => {
 		containerStyle.push({ width: calcWidth });
 	}
 
+	if (!editable) {
+		titleContainer.push({ backgroundColor: '#99B0A8' });
+	}
+
 	return (
 		<View style={containerStyle}>
 			<Text style={styles.titleText}>{title}</Text>
-			<View style={styles.titleContainer}>
+			<View style={titleContainer}>
 				<TextInput
 					underlineColorAndroid="transparent"
 					style={styles.titleInput}
